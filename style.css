@@ -1,0 +1,166 @@
+body,
+table,
+td,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+.container {
+  max-width: 350px;
+  margin: 10px auto;
+  background-color: #3232c0;
+  border-radius: 20px;
+  padding-inline: 5rem;
+  padding-block: 5rem;
+  border-bottom: 10px solid #fcd285;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-inline: 2rem;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
+
+.header {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  /* color: #8390e2; */
+  color: #9494dc;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Playfair", sans-serif;
+}
+
+.funds-container {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 1px solid #8390e2;
+  border-radius: 10px;
+  position: relative;
+}
+
+.funds-heading {
+  position: absolute;
+  top: -15px;
+  padding: 8px 20px;
+  background-color: #e8ecf8;
+  border-radius: 10px;
+}
+
+.funds-heading h3 {
+  font-family: "Playfair", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.flows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.flow {
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.flow .value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flow .value::before {
+  content: "₦";
+}
+
+.flow .label {
+  font-size: 10px;
+  color: #33298c;
+  font-weight: 800;
+}
+
+.mmf {
+  background-color: #fcd285;
+}
+
+.dbf {
+  background-color: #f9d5de;
+}
+
+.eif {
+  background-color: #9dd8b4;
+}
+
+.summary {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 10px;
+  padding-inline: 10px;
+}
+
+/* Overall Summary section */
+.overall-summary {
+  margin-top: 30px;
+  padding:  23px;
+  
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.summary-heading {
+  position: absolute;
+  top: -15px;
+  padding: 10px 20px;
+  background-color: #fcd285;
+  border-radius: 10px;
+}
+
+.summary-heading h3 {
+  font-weight: 900;
+  font-family: "Playfair", sans-serif;
+  font-size: 15px;
+}
+
+.summary-content {
+  /* margin-top: 15px; */
+  color: #000091;
+  padding-inline: 20px;
+}
+
+.summary-content h3 {
+  font-family: "Playfair", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 35px;
+}
+
+.summary-content p {
+  margin-top: 10px;
+}
