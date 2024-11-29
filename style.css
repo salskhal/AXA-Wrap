@@ -12,6 +12,10 @@ h3 {
 }
 body {
   background-color: rgb(230, 230, 230);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -26,7 +30,7 @@ body {
   padding-block: 5rem;
   border-bottom: 10px solid #fcd285;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 @media only screen and (max-width: 600px) {
