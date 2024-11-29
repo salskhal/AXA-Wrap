@@ -18,10 +18,15 @@ body {
   max-width: 350px;
   margin: 10px auto;
   background-color: #3232c0;
+  background-image: url("./assets/background.svg");
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
   padding-inline: 5rem;
   padding-block: 5rem;
   border-bottom: 10px solid #fcd285;
+  position: relative;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,8 +132,8 @@ body {
 /* Overall Summary section */
 .overall-summary {
   margin-top: 30px;
-  padding:  23px;
-  
+  padding: 23px;
+
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
@@ -163,4 +168,25 @@ body {
 
 .summary-content p {
   margin-top: 10px;
+  width: 80%;
+}
+
+.star {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  /* top: 10px; */
+}
+
+.star img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .star {
+    bottom: 0;
+  }
+  .star img {
+    width: 150px;
+  }
 }
